@@ -5,6 +5,9 @@ angular.module('taoluApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    },{
+      'title': 'Inscription',
+      'link': '/inscription'
     }];
 
     $scope.isCollapsed = true;

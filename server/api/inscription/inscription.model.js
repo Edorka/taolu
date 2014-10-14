@@ -1,11 +1,12 @@
 'use strict';
 
 var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
+    Schema = mongoose.Schema,
+    competitorId = Schema.Types.ObjectId;
 
 var InscriptionSchema = new Schema({
   formalized: Date,
-  competitors: [{ type : ObjectId, ref: 'Competitor' }],
+  //competitors: [{ type : competitorId, ref: 'Competitor' }],
   active: Boolean
 });
 
